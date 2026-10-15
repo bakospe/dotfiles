@@ -79,6 +79,7 @@
     gedit
     gimp
     git
+    git-filter-repo
     git-lfs
     gnu-make
     gnupg
