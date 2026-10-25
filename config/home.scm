@@ -14,6 +14,7 @@
   (gnu packages compression)
   (gnu packages curl)
   (gnu packages dns)
+  (gnu packages ebook)
   (gnu packages education)
   (gnu packages fonts)
   (gnu packages freedesktop)
@@ -60,6 +61,7 @@
     7zip
     acpi
     adwaita-icon-theme
+    calibre
     curl
     dconf
     dmenu
