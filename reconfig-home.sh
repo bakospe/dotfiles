@@ -77,6 +77,7 @@ guix shell \
 guix describe -f channels > ~/.config/guix/channels.pinned.scm
 VSCODE_EXTENSIONS=(
     Tyriar.sort-lines
+    ms-azuretools.vscode-containers
     ms-python.python
     ms-vscode-remote.remote-ssh
     ms-vscode.cpptools-extension-pack
