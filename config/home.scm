@@ -15,7 +15,6 @@
   (gnu packages curl)
   (gnu packages dns)
   (gnu packages ebook)
-  (gnu packages education)
   (gnu packages fonts)
   (gnu packages freedesktop)
   (gnu packages gimp)
@@ -44,6 +43,7 @@
   (gnu packages ssh)
   (gnu packages suckless)
   (gnu packages sync)
+  (gnu packages tls)
   (gnu packages tmux)
   (gnu packages tor-browsers)
   (gnu packages version-control)
@@ -101,8 +101,8 @@
     ntfs-3g
     numlockx
     obs
-    openboard
     openssh
+    openssl
     pcmanfm
     perl-image-exiftool
     pigz
@@ -134,6 +134,7 @@
     xclip
     xdg-desktop-portal-gtk
     xdg-utils
+    xournalpp
     xrandr
     xrdb
     xset
