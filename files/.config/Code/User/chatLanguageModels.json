@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Ollama Cloud",
+    "vendor": "customendpoint",
+    "apiKey": "${input:ollamaCloudApiKey}",
+    "apiType": "chat-completions",
+    "models": [
+      {
+        "id": "deepseek-v4.1-flash",
+        "name": "Deepseek V4.1 Flash",
+        "url": "https://ollama.com/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 1032576,
+        "maxOutputTokens": 16000
+      },
+      {
+        "id": "deepseek-v4.1-flash:1017",
+        "name": "Deepseek V4.1 Flash 1017",
+        "url": "https://ollama.com/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 1032576,
+        "maxOutputTokens": 16000
+      },
+      {
+        "id": "deepseek-v4-pro:0813",
+        "name": "Deepseek V4 Pro 0813",
+        "url": "https://ollama.com/v1/chat/completions",
+        "toolCalling": true,
+        "vision": false,
+        "maxInputTokens": 1032576,
+        "maxOutputTokens": 16000
+      },
+      {
+        "id": "gemma4:31b",
+        "name": "Gemma4 31b",
+        "url": "https://ollama.com/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 246144,
+        "maxOutputTokens": 16000
+      },
+      {
+        "id": "kimi-k2.6",
+        "name": "Kimi K2.6",
+        "url": "https://ollama.com/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 246144,
+        "maxOutputTokens": 16000
+      },
+      {
+        "id": "kimi-k2.7-code",
+        "name": "Kimi K2.7 Code",
+        "url": "https://ollama.com/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 246144,
+        "maxOutputTokens": 16000
+      },
+      {
+        "id": "kimi-k3",
+        "name": "Kimi K3",
+        "url": "https://ollama.com/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 1032576,
+        "maxOutputTokens": 16000
+      },
+      {
+        "id": "glm-5.3-flash",
+        "name": "GLM 5.3 Flash",
+        "url": "https://ollama.com/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 1032576,
+        "maxOutputTokens": 16000
+      },
+      {
+        "id": "glm-5.3",
+        "name": "GLM 5.3",
+        "url": "https://ollama.com/v1/chat/completions",
+        "toolCalling": true,
+        "vision": false,
+        "maxInputTokens": 1032576,
+        "maxOutputTokens": 16000
+      },
+      {
+        "id": "glm-5.2",
+        "name": "GLM 5.2",
+        "url": "https://ollama.com/v1/chat/completions",
+        "toolCalling": true,
+        "vision": false,
+        "maxInputTokens": 1032576,
+        "maxOutputTokens": 16000
+      },
+      {
+        "id": "mistral-large-3:675b",
+        "name": "Mistral Large 3 675b",
+        "url": "https://ollama.com/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 246144,
+        "maxOutputTokens": 16000
+      }
+    ]
+  }
+]
+

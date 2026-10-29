@@ -3,6 +3,7 @@
 mkdir -p ~/.vscode
 mkdir -p ~/.vscode-shared
 mkdir -p ~/.config/Code
+mkdir -p ~/.config/Code/User
 mkdir -p ~/.ssh/vscode
 mkdir -p ~/stuff/dev
 if [ ! -e ~/.gitconfig ]; then
@@ -12,8 +13,10 @@ if [ ! -e ~/.git-credentials ]; then
     touch ~/.git-credentials
 fi
 if [ ! -e ~/.config/Code/User/settings.json ]; then
-    mkdir -p ~/.config/Code/User
     touch ~/.config/Code/User/settings.json
+fi
+if [ ! -e ~/.config/Code/User/chatLanguageModels.json ]; then
+    touch ~/.config/Code/User/chatLanguageModels.json
 fi
 exec guix time-machine \
     --channels=$HOME/.config/guix/channels.pinned.scm \
@@ -31,6 +34,7 @@ exec guix time-machine \
     --expose=$HOME/.gitconfig \
     --expose=$HOME/.git-credentials \
     --expose=$(realpath ~/.config/Code/User/settings.json) \
+    --expose=$(realpath ~/.config/Code/User/chatLanguageModels.json) \
     --share=/dev/shm \
     --share=$HOME/.vscode \
     --share=$HOME/.vscode-shared \
