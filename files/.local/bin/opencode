@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+mkdir -p ~/.cache/opencode
+mkdir -p ~/.config/opencode
+mkdir -p ~/.local/share/opencode
+mkdir -p ~/.local/state/opencode
+if [ ! -e ~/.config/opencode/cli.json ]; then
+    touch ~/.config/opencode/cli.json
+fi
+if [ ! -e ~/.config/opencode/opencode.jsonc ]; then
+    touch ~/.config/opencode/opencode.jsonc
+fi
+exec guix shell \
+    --container \
+    --network \
+    --expose=$(realpath ~/.config/opencode/cli.json) \
+    --expose=$(realpath ~/.config/opencode/opencode.jsonc) \
+    --share=$HOME/.cache/opencode \
+    --share=$HOME/.config/opencode \
+    --share=$HOME/.local/share/opencode \
+    --share=$HOME/.local/state/opencode \
+    --manifest=$HOME/.local/share/manifests/opencode.scm \
+    -- \
+    opencode "$@"
+
