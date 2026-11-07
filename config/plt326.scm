@@ -1,5 +1,5 @@
 (use-modules
-  (suika-chan packages provide-virtual-touchpad))
+  (suika-chan packages linux))
 (include "./system.scm")
 (define plt326-operating-system (operating-system
   (inherit base-operating-system)

@@ -22,6 +22,7 @@
   (gnu packages gnome-circle)
   (gnu packages gnupg)
   (gnu packages gnuzilla)
+  (gnu packages gtk)
   (gnu packages image)
   (gnu packages image-viewers)
   (gnu packages imagemagick)
@@ -55,7 +56,7 @@
   (gnu packages xorg)
   (nongnu packages messaging)
   (nongnu packages mozilla)
-  (suika-chan packages guix-infra))
+  (suika-chan packages ci))
 (home-environment
   (packages (list
     7zip
@@ -78,6 +79,7 @@
     font-google-noto-sans-cjk
     font-google-noto-sans-hebrew
     gcc-toolchain
+    gdk-pixbuf
     gedit
     gimp
     git
@@ -130,6 +132,7 @@
     ublock-origin/chromium
     ungoogled-chromium
     virt-manager
+    webp-pixbuf-loader
     wireshark
     xclip
     xdg-desktop-portal-gtk
