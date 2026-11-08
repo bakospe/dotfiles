@@ -50,6 +50,7 @@
   (gnu packages version-control)
   (gnu packages video)
   (gnu packages virtualization)
+  (gnu packages vpn)
   (gnu packages window-management)
   (gnu packages xdisorg)
   (gnu packages xfce)
@@ -133,6 +134,7 @@
     ungoogled-chromium
     virt-manager
     webp-pixbuf-loader
+    wireguard-tools
     wireshark
     xclip
     xdg-desktop-portal-gtk
