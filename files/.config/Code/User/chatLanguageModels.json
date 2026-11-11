@@ -1,110 +1,107 @@
 [
   {
-    "name": "Ollama Cloud",
+    "name": "LiteLLM",
     "vendor": "customendpoint",
-    "apiKey": "${input:ollamaCloudApiKey}",
+    "apiKey": "${input:litellmApiKey}",
     "apiType": "chat-completions",
     "models": [
       {
-        "id": "deepseek-v4.1-flash",
-        "name": "Deepseek V4.1 Flash",
-        "url": "https://ollama.com/v1/chat/completions",
-        "toolCalling": true,
-        "vision": true,
-        "maxInputTokens": 1032576,
-        "maxOutputTokens": 16000
-      },
-      {
         "id": "deepseek-v4.1-flash:1017",
-        "name": "Deepseek V4.1 Flash 1017",
-        "url": "https://ollama.com/v1/chat/completions",
+        "name": "DeepSeek V4.1 Flash 1017",
+        "url": "https://internal.bakos.pe/litellm",
         "toolCalling": true,
         "vision": true,
-        "maxInputTokens": 1032576,
-        "maxOutputTokens": 16000
+        "thinking": true,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 65536,
+        "supportsReasoningEffort": ["none", "low", "high", "max"]
       },
       {
         "id": "deepseek-v4-pro:0813",
-        "name": "Deepseek V4 Pro 0813",
-        "url": "https://ollama.com/v1/chat/completions",
+        "name": "DeepSeek V4 Pro 0813",
+        "url": "https://internal.bakos.pe/litellm",
         "toolCalling": true,
         "vision": false,
-        "maxInputTokens": 1032576,
-        "maxOutputTokens": 16000
+        "thinking": true,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 65536,
+        "supportsReasoningEffort": ["none", "low", "high", "max"]
       },
       {
         "id": "gemma4:31b",
-        "name": "Gemma4 31b",
-        "url": "https://ollama.com/v1/chat/completions",
+        "name": "Gemma 4 31B",
+        "url": "https://internal.bakos.pe/litellm",
         "toolCalling": true,
         "vision": true,
-        "maxInputTokens": 246144,
-        "maxOutputTokens": 16000
+        "thinking": true,
+        "contextWindow": 262144,
+        "maxOutputTokens": 16384,
+        "supportsReasoningEffort": ["none", "high"]
       },
       {
-        "id": "kimi-k2.6",
-        "name": "Kimi K2.6",
-        "url": "https://ollama.com/v1/chat/completions",
+        "id": "kimi-k3.1-pro",
+        "name": "Kimi K3.1 Pro",
+        "url": "https://internal.bakos.pe/litellm",
         "toolCalling": true,
         "vision": true,
-        "maxInputTokens": 246144,
-        "maxOutputTokens": 16000
-      },
-      {
-        "id": "kimi-k2.7-code",
-        "name": "Kimi K2.7 Code",
-        "url": "https://ollama.com/v1/chat/completions",
-        "toolCalling": true,
-        "vision": true,
-        "maxInputTokens": 246144,
-        "maxOutputTokens": 16000
-      },
-      {
-        "id": "kimi-k3",
-        "name": "Kimi K3",
-        "url": "https://ollama.com/v1/chat/completions",
-        "toolCalling": true,
-        "vision": true,
-        "maxInputTokens": 1032576,
-        "maxOutputTokens": 16000
+        "thinking": true,
+        "contextWindow": 1048576,
+        "maxOutputTokens": 65536,
+        "supportsReasoningEffort": ["none", "low", "medium", "high", "max"]
       },
       {
         "id": "glm-5.3-flash",
         "name": "GLM 5.3 Flash",
-        "url": "https://ollama.com/v1/chat/completions",
+        "url": "https://internal.bakos.pe/litellm",
         "toolCalling": true,
         "vision": true,
-        "maxInputTokens": 1032576,
-        "maxOutputTokens": 16000
+        "thinking": true,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 65536,
+        "supportsReasoningEffort": ["low", "high", "max"]
       },
       {
         "id": "glm-5.3",
         "name": "GLM 5.3",
-        "url": "https://ollama.com/v1/chat/completions",
+        "url": "https://internal.bakos.pe/litellm",
         "toolCalling": true,
         "vision": false,
-        "maxInputTokens": 1032576,
-        "maxOutputTokens": 16000
+        "thinking": true,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 65536,
+        "supportsReasoningEffort": ["low", "high", "max"]
       },
       {
-        "id": "glm-5.2",
-        "name": "GLM 5.2",
-        "url": "https://ollama.com/v1/chat/completions",
-        "toolCalling": true,
-        "vision": false,
-        "maxInputTokens": 1032576,
-        "maxOutputTokens": 16000
-      },
-      {
-        "id": "mistral-large-3:675b",
-        "name": "Mistral Large 3 675b",
-        "url": "https://ollama.com/v1/chat/completions",
+        "id": "mistral-large-4",
+        "name": "Mistral Large 4",
+        "url": "https://internal.bakos.pe/litellm",
         "toolCalling": true,
         "vision": true,
-        "maxInputTokens": 246144,
-        "maxOutputTokens": 16000
+        "thinking": true,
+        "contextWindow": 1048576,
+        "maxOutputTokens": 65536
       }
-    ]
+    ],
+    "settings": {
+      "deepseek-v4.1-flash:1017": {
+        "reasoningEffort": "high"
+      },
+      "deepseek-v4-pro:0813": {
+        "reasoningEffort": "high"
+      },
+      "gemma4:31b": {
+        "reasoningEffort": "high"
+      },
+      "kimi-k3.1-pro": {
+        "reasoningEffort": "max"
+      },
+      "glm-5.3-flash": {
+        "reasoningEffort": "max"
+      },
+      "glm-5.3": {
+        "reasoningEffort": "max"
+      }
+    }
   }
 ]
 
