@@ -9,6 +9,9 @@ mkdir -p ~/stuff/dev
 if [ ! -e ~/.gitconfig ]; then
     touch ~/.gitconfig
 fi
+if [ ! -e ~/.gitconfig.secret ]; then
+    touch ~/.gitconfig.secret
+fi
 if [ ! -e ~/.git-credentials ]; then
     touch ~/.git-credentials
 fi
@@ -32,6 +35,7 @@ exec guix time-machine \
     --expose=/var/run/dbus/system_bus_socket \
     --expose=$(ls /tmp/dbus-*) \
     --expose=$HOME/.gitconfig \
+    --expose=$HOME/.gitconfig.secret \
     --expose=$HOME/.git-credentials \
     --expose=$(realpath ~/.config/Code/User/settings.json) \
     --expose=$(realpath ~/.config/Code/User/chatLanguageModels.json) \
