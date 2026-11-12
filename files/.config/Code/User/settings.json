@@ -34,6 +34,7 @@
     "jsonc": false,
     "jsonl": false
   },
+  "github.copilot.chat.memory.enabled": false,
   "files.trimTrailingWhitespace": true,
   "security.workspace.trust.enabled": false,
   "update.mode": "none",

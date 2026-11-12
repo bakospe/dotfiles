@@ -18,6 +18,9 @@ fi
 if [ ! -e ~/.config/Code/User/settings.json ]; then
     touch ~/.config/Code/User/settings.json
 fi
+if [ ! -e ~/.config/Code/User/keybindings.json ]; then
+    touch ~/.config/Code/User/keybindings.json
+fi
 if [ ! -e ~/.config/Code/User/chatLanguageModels.json ]; then
     touch ~/.config/Code/User/chatLanguageModels.json
 fi
@@ -38,6 +41,7 @@ exec guix time-machine \
     --expose=$HOME/.gitconfig.secret \
     --expose=$HOME/.git-credentials \
     --expose=$(realpath ~/.config/Code/User/settings.json) \
+    --expose=$(realpath ~/.config/Code/User/keybindings.json) \
     --expose=$(realpath ~/.config/Code/User/chatLanguageModels.json) \
     --share=/dev/shm \
     --share=$HOME/.vscode \
