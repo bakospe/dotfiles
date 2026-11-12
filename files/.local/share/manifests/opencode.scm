@@ -1,4 +1,0 @@
-(specifications->manifest '(
-  "coreutils"
-  "opencode"))
-
