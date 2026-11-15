@@ -1,8 +1,18 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "permission": {
-    "websearch": "allow"
+  "plugins": [
+    "@openchamber/opencode-search-providers"
+  ],
+  "websearch": {
+    "provider": "searxng"
   },
+  "permissions": [
+    {
+      "action": "websearch",
+      "resource": "*",
+      "effect": "allow"
+    }
+  ],
   "providers": {
     "litellm": {
       "name": "LiteLLM",
