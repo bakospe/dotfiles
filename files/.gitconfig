@@ -1,7 +1,15 @@
 [include]
 	path = ~/.gitconfig.secret
-[credential]
-	helper = store
+[user]
+	name = Peter Bakos
+	email = contact@bakos.pe
+	signingkey = 5205A23036D08959
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
 [init]
 	defaultBranch = master
+[credential]
+	helper = store
 
