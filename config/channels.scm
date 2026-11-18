@@ -19,9 +19,15 @@
       (openpgp-fingerprint "CA4F 8CF4 37D7 478F DA05  5FD4 4213 7701 1A37 8446"))))
   (channel
     (name 'suika-chan)
-    (url "https://github.com/bakospe/suika-chan"))
+    (url "https://github.com/bakospe/suika-chan")
+    (introduction (make-channel-introduction
+      "4fcf5db3febed45b8b293ac889e58883b7a91a7f"
+      (openpgp-fingerprint "E533 7D23 B733 322A 564B  F230 5205 A230 36D0 8959"))))
   (channel
     (name 'vigne-chan)
-    (url "https://bakos.pe/forgejo/bakos/vigne-chan"))
+    (url "https://bakos.pe/forgejo/bakos/vigne-chan")
+    (introduction (make-channel-introduction
+      "6ca58800e76a82a2dc40d316e27580b979702f82"
+      (openpgp-fingerprint "E533 7D23 B733 322A 564B  F230 5205 A230 36D0 8959"))))
   %default-channels)
 
