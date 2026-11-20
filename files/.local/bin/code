@@ -2,6 +2,7 @@
 
 mkdir -p ~/.vscode
 mkdir -p ~/.vscode-shared
+mkdir -p ~/.copilot
 mkdir -p ~/.config/Code
 mkdir -p ~/.config/Code/User
 mkdir -p ~/.ssh/vscode
@@ -14,6 +15,9 @@ if [ ! -e ~/.gitconfig.secret ]; then
 fi
 if [ ! -e ~/.git-credentials ]; then
     touch ~/.git-credentials
+fi
+if [ ! -e ~/.copilot/copilot-instructions.md ]; then
+    touch ~/.copilot/copilot-instructions.md
 fi
 if [ ! -e ~/.config/Code/User/settings.json ]; then
     touch ~/.config/Code/User/settings.json
@@ -40,6 +44,7 @@ exec guix time-machine \
     --expose=$HOME/.gitconfig \
     --expose=$HOME/.gitconfig.secret \
     --expose=$HOME/.git-credentials \
+    --expose=$HOME/.copilot/copilot-instructions.md \
     --expose=$(realpath ~/.config/Code/User/settings.json) \
     --expose=$(realpath ~/.config/Code/User/keybindings.json) \
     --expose=$(realpath ~/.config/Code/User/chatLanguageModels.json) \
